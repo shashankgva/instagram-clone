@@ -1,0 +1,51 @@
+.headerIconContainer {
+  display: flex;
+  align-items: center;
+}
+
+.headerIconContainer__headerIcon {
+  margin: 0 10px;
+}
+
+.headerIconContainer__avatar {
+  width: 22px !important;
+  height: 22px !important;
+  margin-left: 10px;
+}
+
+.headerIconContainer__collapsible {
+  background: #fff;
+  background: rgba(var(--d87, 255, 255, 255), 1);
+  border-radius: 6px;
+  -webkit-box-shadow: 0 0 5px 1px rgb(0 0 0 / 10%);
+  box-shadow: 0 0 5px 1px rgb(0 0 0 / 10%);
+  -webkit-box-shadow: 0 0 5px 1px rgba(var(--jb7, 0, 0, 0), 0.0975);
+  box-shadow: 0 0 5px 1px rgba(var(--jb7, 0, 0, 0), 0.0975);
+  position: absolute;
+  z-index: 3;
+  top: 54px;
+  right: 285px;
+}
+
+.headerIconContainer__collapsibleItems {
+  padding: 10px;
+}
+
+.headerIconContainer__collapsibleItem {
+  padding: 0px 10px 20px 10px;
+}
+
+.headerIconContainer__logout {
+  border-top: 1px solid lightgray;
+  padding: 10px;
+}
+
+.headerIconContainer__pointer {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  transform: rotate(45deg);
+  box-shadow: 0 0 5px 1px rgba(var(--jb7, 0, 0, 0), 0.0975);
+  top: 50px;
+  right: 290px;
+}

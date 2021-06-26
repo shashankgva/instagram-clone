@@ -1,38 +1,99 @@
-.App {
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  background-color: #fafafa;
+  justify-content: center;
+}
+
+.app__headerContainer {
+  height: 54px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+}
+
+.app__header {
+  background-color: white;
+  padding: 0 40px;
+  height: 100%;
+  object-fit: contain;
+  display: flex;
+  justify-content: space-between;
+  max-width: 975px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.app__headerImage {
+  object-fit: contain;
+  width: 103px;
+  height: 29px;
+}
+
+.app__loginContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app__headerInput {
+  height: 20px;
+  /* border: none; */
+  border: 1px solid lightgray;
+}
+
+.app__text {
+  font-weight: normal;
+  padding: 20px;
+}
+
+.app__signup {
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app__content {
+  padding: 20px;
+  max-width: 935px;
+  margin: 0 auto;
+  margin-top: 80px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app__avatars {
+  border: 1px solid lightgray;
+  padding: 20px;
+  margin-bottom: 40px;
+  max-width: 614px;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding-left: 50px;
+}
+
+.app__avatarHolder {
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  border: 2px solid red;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.app__avatar {
+  width: 56px !important;
+  height: 56px !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app__posts {
+  /* padding: 20px; */
+  width: 100%;
+  /* margin: 0 auto; */
 }
